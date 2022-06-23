@@ -16,14 +16,7 @@ LRESULT CALLBACK WindowProc(
 		{
 			if (wParam == VK_ESCAPE)
 			{
-				if (MessageBox(
-					NULL,
-					TEXT("종료하시겠습니까?"),
-					TEXT("종료"),
-					MB_YESNO | MB_ICONQUESTION) == IDYES)
-				{
-					DestroyWindow(hwnd);
-				}
+				DestroyWindow(hwnd);
 			}
 		}
 	}
